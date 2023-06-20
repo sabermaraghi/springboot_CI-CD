@@ -1,0 +1,46 @@
+ java -version
+   22  sudo apt install default-jre
+   23  java -version
+   24  sudo apt install default-jdk
+   25  ip a
+   26  javac -version
+   27  ip a
+   28  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+   29  echo $?
+   30  apt install jenkins
+   31  vim /etc/resolv.conf
+   32  reboot now
+   33  cd /opt/
+   34  vim /etc/resolv.conf
+   35  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+   36  apt install jenkins
+   37  ip a
+   38  curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee     /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+   39  echo $?
+   40  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]     https://pkg.jenkins.io/debian binary/ | sudo tee     /etc/apt/sources.list.d/jenkins.list > /dev/null
+   41  echo $?
+   42  apt-get update
+   43  apt-get install fontconfig openjdk-11-jre
+   44  apt-get install jenkins
+   45  systemctl status jenkins
+   46  systemctl restart jenkins
+   47  cat /var/lib/jenkins/secrets/initialAdminPassword
+   48  vim /etc/resolv.conf
+   49  vim /etc/hosts
+   50  vim /etc/resolv.conf
+   51  apt update
+   52  apt upgrade
+   53  apt install maven -y
+   54  apt install default-jdk -y
+   56  wget https://downloads.apache.org/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz -P /tmp
+   57  cd /tmp
+   58  tar -xzf apache-maven-3.9.2-bin.tar.gz
+   59  cp -r apache-maven-3.9.2 /opt/maven
+   60  vim /etc/profile.d/maven.sh
+   61  chmod +x /etc/profile.d/maven.sh
+   62  source /etc/profile.d/maven.sh
+   63  mvn -version
+   64  mvn -v
+   65  mvn -version
+   
+   ## https://linuxhint.com/install_apache_maven_ubuntu/
